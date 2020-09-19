@@ -36,8 +36,36 @@ int main (int ac, char** av) {
 		
 		return -1;
 	}
+	int arrfour {};
+	int arrfive {};
 	
 	// Parse the command line arguments
+	int itteration = ac - 1;
+	if(ac == 4)
+	{
+		for(int i = 0; i < itteration; i++)
+		{
+			if(i != (itteratoin - 1))
+			{
+				int c = atoi(*(argv + i+ 1));
+				arrfour[i] = c;
+			}
+			if(i == (itteration - 1))
+			{
+				
+			}
+			
+
+			
+			
+		}
+	}
+	
+	if(ac == 5)
+	{
+		
+	}
+		
 	
 		
 	// Depending on the dimension of the arguments, call the appropriate Morty
