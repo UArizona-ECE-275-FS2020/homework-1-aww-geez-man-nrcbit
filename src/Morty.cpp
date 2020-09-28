@@ -17,6 +17,7 @@
 
 	void C137::Morty(int start, int end)
 	{
+		std::cout << "Morty C137 says:" << std::endl;
 		for (int loop = start; loop <= end; loop++)
 		{
 			std::cout << loop << ":";
@@ -40,6 +41,7 @@
 	}
 	void C137::Morty(int start, int end, int step)
 	{
+		std::cout << "Morty C137 says:" << std::endl;
 		for (int loop = start; loop <= end; loop = loop + step)
 		{
 			std::cout << loop << ":";
@@ -71,6 +73,7 @@
 
 	void Z286::Morty(int start, int end)
 	{
+		std::cout << "Morty Z286 says:" << std::endl;
 		for (int loop = start; loop <= end; loop++)
 		{
 			std::cout << loop << ":";
@@ -96,6 +99,7 @@
 
 	void Z286::Morty(int start, int end, int step)
 	{
+		std::cout << "Morty Z286 says:" << std::endl;
 		for (int loop = start; loop <= end; loop = loop + step)
 		{
 			std::cout << loop << ":";
