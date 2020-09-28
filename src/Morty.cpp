@@ -20,11 +20,11 @@
 		for (int loop = start; loop <= end; loop++)
 		{
 			std::cout << loop << ":";
-			if (loop % 5 == 0)
+			if (loop % 5 == 0 && ((loop % 3) != 0))
 			{
 				std::cout << "Geez" << std::endl;
 			}
-			else if (loop % 3 == 0)
+			else if (loop % 3 == 0 && ((loop % 5) != 0))
 			{
 				std::cout << "Aww" << std::endl;
 			}
@@ -43,11 +43,11 @@
 		for (int loop = start; loop <= end; loop = loop + step)
 		{
 			std::cout << loop << ":";
-			if (loop % 5 == 0)
+			if (loop % 5 == 0 && ((loop % 3) != 0))
 			{
 				std::cout << "Geez" << std::endl;
 			}
-			else if (loop % 3 == 0)
+			else if (loop % 3 == 0 && ((loop % 5) != 0))
 			{
 				std::cout << "Aww" << std::endl;
 			}
@@ -74,11 +74,11 @@
 		for (int loop = start; loop <= end; loop++)
 		{
 			std::cout << loop << ":";
-			if (loop % 5 == 0)
+			if (loop % 5 == 0 && ((loop % 3) != 0))
 			{
 				std::cout << "zeeG" << std::endl;
 			}
-			else if (loop % 3 == 0)
+			else if (loop % 3 == 0 && ((loop % 5) != 0))
 			{
 				std::cout << "wwA" << std::endl;
 			}
@@ -99,11 +99,11 @@
 		for (int loop = start; loop <= end; loop = loop + step)
 		{
 			std::cout << loop << ":";
-			if (loop % 5 == 0)
+			if (loop % 5 == 0 && ((loop % 3) != 0))
 			{
 				std::cout << "zeeG" << std::endl;
 			}
-			else if (loop % 3 == 0)
+			else if (loop % 3 == 0 && ((loop % 5) != 0))
 			{
 				std::cout << "wwA" << std::endl;
 			}
