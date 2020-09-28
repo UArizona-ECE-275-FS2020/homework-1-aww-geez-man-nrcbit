@@ -81,6 +81,10 @@ int main(int ac, char** av) {
 		{
 			Z286::Morty(start, end);
 		}
+		else
+		{
+			std::cout << "ERROR: Unknown dimension !!" << std::endl;
+		}
 	}
 
 	if (ac == 5)
@@ -121,10 +125,9 @@ int main(int ac, char** av) {
 		{
 			Z286::Morty(start, end, step);
 		}
-		if((dimension.compare("C137") != 0) && (dimension.compare("Z286") != 0))
+		else
 		{
-			std::cout << "Error: Unknown dimension !!" << std::endl;
-			return 0;
+			std::cout << "ERROR: Unknown dimension !!" << std::endl;
 		}
 	}
 
