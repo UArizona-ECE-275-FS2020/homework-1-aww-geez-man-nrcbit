@@ -31,7 +31,7 @@ int main(int ac, char** av) {
 	// ./AwwGeezMan {start} {stop} {dimension}
 	// or 
 	// ./AwwGeezMan {start} {stop} {step} {dimension}
-	if (ac != 4 and ac != 5) {
+	if (ac != 4 && ac != 5) {
 		std::cout << "Error: Command line arguments are incorrect. Call program as (1) or (2)"
 			<< std::endl;
 		std::cout << "(1)\t./AwwGeezMan {start} {stop} {dimension}" << std::endl;
@@ -117,11 +117,11 @@ int main(int ac, char** av) {
 		{
 			C137::Morty(start, end, step);
 		}
-		else if (dimension.compare("Z286") == 0)
+		if (dimension.compare("Z286") == 0)
 		{
 			Z286::Morty(start, end, step);
 		}
-		else
+		if((dimension.compare("C137") != 0) && (dimension.compare("Z286") != 0))
 		{
 			std::cout << "Error: Unknown dimension !!" << std::endl;
 			return 0;
