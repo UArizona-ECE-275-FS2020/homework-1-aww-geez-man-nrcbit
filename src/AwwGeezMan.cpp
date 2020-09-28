@@ -48,37 +48,31 @@ int main(int ac, char** av) {
 	// Parse the command line arguments
 	int itteration = ac - 1;
 
-	int start;
-	int end; 
+	int start = 0;
+	int end = 0; 
 	int step;
+	int counter = 0;
 
 	if (ac == 4)
 	{
-
 		std::string dimension;
-		for (int i = 0; i < itteration - 1; i++)
+		for (int i = 0; i <= itteration - 1; i++)
 		{
-			if (i < (itteration - 2))
+			if (counter == 0)
 			{
-				int counter = 0;
-				if (counter == 0)
-				{
-					start = atoi(*(av + i + 1));
-				}	
-				if (counter == 1)
-				{
-					end = atoi(*av + i + 1);
-				}
-				counter++;
+				start = atoi(*(av + i + 1));
+			}					
+			if (counter == 1)
+			{
+				end = atoi(*(av + i + 1));
 			}
 			if (i == (itteration - 2))
 			{
-				std::cout << "We out here and i = " << i << std::endl;;
 				dimension = *(av + 2 + i);
-				std::cout << dimension << std::endl;
+				
 			}
+			counter++;
 		}
-		
 		if (dimension.compare("C137") == 0)
 		{
 			C137::Morty(start, end);
@@ -92,33 +86,33 @@ int main(int ac, char** av) {
 	if (ac == 5)
 	{
 		std::string dimension;
-		for (int i = 0; i < itteration - 1; i++)
+		
+		for (int i = 0; i <= itteration - 1; i++)
 		{
-			if (i < (itteration - 2))
+			if (counter == 0)
 			{
-				int counter = 0;
-				if (counter == 0)
-				{
-					start = atoi(*(av + i + 1));
-				}
-				if (counter == 1)
-				{
-					end = atoi(*av + i + 1);
-				}
-				if (counter == 2)
-				{
-					step = atoi(*(av + i + 1));
-				}
-				counter++;
-
+				start = atoi(*(av + i + 1));
 			}
-			if (i == (itteration - 2))
+			if (counter == 1)
+			{	
+				end = atoi(*(av + i + 1));
+			}				
+			if (counter == 2)
 			{
-				std::cout << "We out here and i = " << i << std::endl;;
+				step = atoi(*(av + i + 1));
+			}
+			if (i == (itteration - 3))
+			{
 				dimension = *(av + 3 + i);
-				std::cout << dimension << std::endl;
 			}
+			counter++;
 		}
+
+		
+	
+
+		
+
 		if (dimension.compare("C137") == 0)
 		{
 			C137::Morty(start, end, step);
