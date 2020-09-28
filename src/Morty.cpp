@@ -20,18 +20,18 @@
 		std::cout << "Morty C137 says:" << std::endl;
 		for (int loop = start; loop <= end; loop++)
 		{
-			std::cout << loop << ":";
+			std::cout << loop << ": ";
 			if (loop % 5 == 0 && ((loop % 3) != 0))
 			{
-				std::cout << " Geez" << std::endl;
+				std::cout << "Geez" << std::endl;
 			}
 			else if (loop % 3 == 0 && ((loop % 5) != 0))
 			{
-				std::cout << " Aww" << std::endl;
+				std::cout << "Aww" << std::endl;
 			}
 			else if (loop % 15 == 0)
 			{
-				std::cout << " Aww Geez Man" << std::endl;
+				std::cout << "Aww Geez Man" << std::endl;
 			}
 			else
 			{
@@ -44,18 +44,18 @@
 		std::cout << "Morty C137 says:" << std::endl;
 		for (int loop = start; loop <= end; loop = loop + step)
 		{
-			std::cout << loop << ":";
+			std::cout << loop << ": ";
 			if (loop % 5 == 0 && ((loop % 3) != 0))
 			{
-				std::cout << " Geez" << std::endl;
+				std::cout << "Geez" << std::endl;
 			}
 			else if (loop % 3 == 0 && ((loop % 5) != 0))
 			{
-				std::cout << " Aww" << std::endl;
+				std::cout << "Aww" << std::endl;
 			}
 			else if (loop % 15 == 0)
 			{
-				std::cout << " Aww Geez Man" << std::endl;
+				std::cout << "Aww Geez Man" << std::endl;
 			}
 			else
 			{
@@ -76,18 +76,18 @@
 		std::cout << "Morty Z286 says:" << std::endl;
 		for (int loop = start; loop <= end; loop++)
 		{
-			std::cout << loop << ":";
+			std::cout << loop << ": ";
 			if (loop % 5 == 0 && ((loop % 3) != 0))
 			{
-				std::cout << " zeeG" << std::endl;
+				std::cout << "zeeG" << std::endl;
 			}
 			else if (loop % 3 == 0 && ((loop % 5) != 0))
 			{
-				std::cout << " wwA" << std::endl;
+				std::cout << "wwA" << std::endl;
 			}
 			else if (loop % 15 == 0)
 			{
-				std::cout << " naM zeeG wwA" << std::endl;
+				std::cout << "naM zeeG wwA" << std::endl;
 			}
 			else
 			{
@@ -102,18 +102,18 @@
 		std::cout << "Morty Z286 says:" << std::endl;
 		for (int loop = start; loop <= end; loop = loop + step)
 		{
-			std::cout << loop << ":";
+			std::cout << loop << ": ";
 			if (loop % 5 == 0 && ((loop % 3) != 0))
 			{
-				std::cout << " zeeG" << std::endl;
+				std::cout << "zeeG" << std::endl;
 			}
 			else if (loop % 3 == 0 && ((loop % 5) != 0))
 			{
-				std::cout << " wwA" << std::endl;
+				std::cout << "wwA" << std::endl;
 			}
 			else if (loop % 15 == 0)
 			{
-				std::cout << " naM zeeG wwA" << std::endl;
+				std::cout << "naM zeeG wwA" << std::endl;
 			}
 			else
 			{
