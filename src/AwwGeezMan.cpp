@@ -124,6 +124,7 @@ int main(int ac, char** av) {
 		else
 		{
 			std::cout << "Error: Unknown dimension !!" << std::endl;
+			return 0;
 		}
 	}
 
